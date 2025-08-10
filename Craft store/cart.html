@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+       <div class="container">
+          <div class="navbar">
+              <div class="logo">
+                  <a href="index.html"><img src="images/logo.png" width="125px"></a>
+              </div>
+              <nav>
+               <ul id="MenuItems">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="products.html">Products</a></li>
+                   <li><a href="">Diy Tpis</a></li>
+                   <li><a href="account.html">Account</a></li>
+               </ul>
+              </nav>
+              <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+              <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+          </div>
+          
+       </div>
+       
+       
+<!---Cart Items -->
+<div class="small-container cart-page">
+   
+   <table>
+       <tr>
+           <th>Product</th>
+           <th>Quantity</th>
+           <th>Subtotal</th>
+       </tr>
+
+       <tr>
+           <td>
+               <div class="cart-info">
+                   <img src="images/il_570xN.3614428182_hfck.jpeg">
+                   <div>
+                       <p>Resin Ocean Coaster</p>
+                       <small>Price: $5.00</small><br>
+                       <a href="">Remove</a>
+                   </div>
+               </div>
+           </td>
+           <td><input type="number" value="1"></td>
+           <td>$5.00</td>
+       </tr>
+       <tr>
+           <td>
+               <div class="cart-info">
+                   <img src="images/buy-3.jpeg">
+                   <div>
+                       <p>Hand Made Bracelet</p>
+                       <small>Price: $2.00</small><br>
+                       <a href="">Remove</a>
+                   </div>
+               </div>
+           </td>
+           <td><input type="number" value="1"></td>
+           <td>$2.00</td>
+       </tr>
+       <tr>
+           <td>
+               <div class="cart-info">
+                   <img src="images/greeting_card_pat_d11_o.jpg">
+                   <div>
+                       <p>Greeting Card</p>
+                       <small>Price: $1.00</small><br>
+                       <a href="">Remove</a>
+                   </div>
+               </div>
+           </td>
+           <td><input type="number" value="1"></td>
+           <td>$1.00</td>
+       </tr>
+   </table>
+    
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>$8.00</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>$0.90</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>$8.90</td>
+            </tr>
+            
+        </table>
+    </div>
+    <div class="total-price">
+        <a href="account.html" class="btn">Proceed to checkout &#8594;</a>
+    </div>
+    
+</div>
+
+<!----------Footer---------------> 
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+               <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col2">
+               <img src="images/logo-white.png">
+                <p>We inspire creativity by celebrating the art of handmade. One carefully crafted piece at a time, we aim to spark imagination, support artisans, and bring the joy of making into everyday life.</p>
+            </div>
+            <div class="footer-col3">
+               <h3>TIPS</h3>
+                <ul>
+                    <li>Inspire</li>
+                    <li>Customize</li>
+                    <li>Promote</li>
+                    <li>Curate</li>
+                </ul>
+            </div>
+            <div class="footer-col4">
+               <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter<li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2025 - Group 28</p>
+    </div>
+
+
+
+<!-------------js for toggle menu-------------->
+
+<script>
+    
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }else
+            {
+                MenuItems.style.maxHeight = "0px"
+            } 
+    }
+    
+    
+</script>
+
+
+
+</body>
+</html>
+
